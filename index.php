@@ -1,4 +1,4 @@
-
+<?php get_header(); ?>
 <!-- Nav Bar Goes Here -->
 	<?php get_sidebar(); ?>
 

@@ -3,9 +3,10 @@
 	require('config.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Test Title</title>
+	<title><?php echo get_bloginfo( 'name' ); ?></title>
+	<meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>" />
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -20,7 +21,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
 	<!-- Styles -->
-	<link href="/assets/default.css" rel="stylesheet">
+	<link href="<?= CSS_STYLES; ?>default.css" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 <body>

@@ -7,10 +7,12 @@
 	<div class="row">
 	  <div class="col-md-3">
 	  	<div class="row">
+	  		<div class="col-xs-3 text-center"><p class="medium-top-margin">links</p></div>
 	  		<div class="col-xs-3 text-center"><p class="medium-top-margin">link</p></div>
 	  		<div class="col-xs-3 text-center"><p class="medium-top-margin">link</p></div>
 	  		<div class="col-xs-3 text-center"><p class="medium-top-margin">link</p></div>
-	  		<div class="col-xs-3 text-center"><p class="medium-top-margin">link</p></div>
+
+	  		<?php var_dump(wp_get_nav_menu_object());die(); ?>
 	  	</div>
 	  </div>
 	  <div class="col-md-6">
