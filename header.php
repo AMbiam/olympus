@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title><?php echo get_bloginfo( 'name' ); ?></title>
+	<title><?= get_bloginfo( 'name' ) ?></title>
 	<meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>" />
 
 	<!-- Latest compiled and minified CSS -->
