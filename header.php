@@ -21,7 +21,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
 	<!-- Styles -->
-	<link href="<?= CSS_STYLES; ?>default.css" rel="stylesheet">
+	<link href="<?= CSS_STYLES; ?>olympus.css" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 <body>
