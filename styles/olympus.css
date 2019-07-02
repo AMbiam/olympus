@@ -2,8 +2,15 @@ h1{
 	font-family: 'Cinzel', serif;
 }
 
+.font-style2{
+	font-family: 'Oswald', sans-serif;
+}
+
 .small-text{
 	font-size:10pt;
+}
+.medium-text{
+	font-size:16pt;
 }
 
 .no-space{
@@ -24,6 +31,20 @@ h1{
 }
 /*blue*/
 .bg-1{ background-color: #0d132d; }
+.font-1{ color: #0d132d; }
 
 /*white*/
 .font-2{ color: #fff; }
+.tp-btm-padding-lg{
+	padding-top:5vmax;
+	padding-bottom:5vmax;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-size: 20px;
+  z-index: 10;
+}
