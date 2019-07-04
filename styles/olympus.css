@@ -48,3 +48,7 @@ div.sticky {
   font-size: 20px;
   z-index: 10;
 }
+
+.logo-img{
+  height:5vmax;
+}

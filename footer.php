@@ -1,5 +1,5 @@
 <!-- Footer -->
-<div class="row theme-color-bg">
+<div class="row theme-primary-bg">
 	<div class="col-xs-6 tp-btm-padding-lg">
 		<ul class="font-2">
 			<ol>Link 1</ol>

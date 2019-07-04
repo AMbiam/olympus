@@ -24,15 +24,22 @@ $pages = custom_theme_page_menu();
 $half_pages = count($pages)/2;
 ?>
 	<div class="row">
-		<div class="col-lg-12 theme-color-bg">
-			<h1 class="small-text font-2 font-style2 no-space text-center small-text-padding ">An Alert about something.</h1>
+		<div class="col-lg-12 theme-primary-bg">
+			<h1 class="small-text font-2 font-style2 no-space text-center small-text-padding "><?= get_bloginfo( 'description' ) ?></h1>
 		</div>
 	</div>
 	<div class="row sticky">
 		<div class="col-md-2">
-			<h1 align="left"><?= get_bloginfo( 'name' ) ?></h1>
+			<h1 align="left">
+				<div>
+					<img class="logo-img" src="<?= get_header_image() ?>" />
+				</div>
+				<div>
+					<p class="small-text"><?= get_bloginfo( 'name' ) ?></p>
+				</div>
+			</h1>
 		</div>
-	  <div class="col-md-8">
+	  <div class="col-md-8 hidden-sm hidden-xs">
 		<?php foreach($pages as $key=>$page): ?>
 			<div class="col-xs-2">
 				<a href="<?= get_page_link($page->ID) ?>" class="nav-link">
@@ -44,6 +51,9 @@ $half_pages = count($pages)/2;
 		<?php endforeach; ?>
 	  </div>
 		<div class="col-md-2">
-			<h1 align="left"><span class="theme-color-font glyphicon glyphicon-search"></span></h1>
+			<h1 align="left"><span class="theme-color-font glyphicon glyphicon-search hidden"></span></h1>
 		</div>
+		<div class="col-md-2 hidden-md hidden-lg theme-primary-bg">
+		  <h1 align="left"><span class="font-2 glyphicon glyphicon-align-justify"></span></h1>
+		</div>	
 	</div>

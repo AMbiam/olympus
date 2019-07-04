@@ -1,6 +1,7 @@
 <?php
 	require('config.php');
-	$theme_color = "#594173";
+	$primary_color = get_theme_mod( 'primary_color' );
+	$secondary_color = get_theme_mod( 'secondary_color' );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,8 @@
 		/*blue*/
 		.theme-color-bg{ background-color: <?= $theme_color ?>; }
 		.theme-color-font{ color: <?= $theme_color ?>; }
+		.theme-primary-bg{ background-color: <?= $primary_color ?>; }
+		.theme-secondary-bg{ background-color: <?= $secondary_color ?>; }
 
 		.nav-link,
 		.nav-link:visited{

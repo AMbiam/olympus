@@ -117,3 +117,38 @@ function jelly_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'jelly_widgets_init' );
+
+
+
+/*Customize sections*/
+function bwpy_customizer( $wp_customize ) {
+	// add new section
+	$wp_customize->add_section( 'bwpy_theme_colors', array(
+		'title' => __( 'Theme Colors', 'bwpy' ),
+		'priority' => 100,
+	) );
+
+	// add color picker setting
+	$wp_customize->add_setting( 'primary_color', array(
+		'default' => '#ff0000'
+	) );
+
+	// add color picker control
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
+		'label' => 'Primary Color',
+		'section' => 'bwpy_theme_colors',
+		'settings' => 'primary_color',
+	) ) );
+
+	$wp_customize->add_setting( 'secondary_color', array(
+		'default' => '#0000ff'
+	) );
+
+	// add color picker control
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
+		'label' => 'Secondary Color',
+		'section' => 'bwpy_theme_colors',
+		'settings' => 'secondary_color',
+	) ) );
+}
+add_action( 'customize_register', 'bwpy_customizer' );
