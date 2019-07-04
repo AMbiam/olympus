@@ -39,16 +39,10 @@ $half_pages = count($pages)/2;
 				</div>
 			</h1>
 		</div>
-	  <div class="col-md-8 hidden-sm hidden-xs">
-		<?php foreach($pages as $key=>$page): ?>
-			<div class="col-xs-2">
-				<a href="<?= get_page_link($page->ID) ?>" class="nav-link">
-				<p class="medium-top-margin font-style2 medium-text">
-				<?= $page->post_title ?>
-				</p>
-				</a>
-			</div>
-		<?php endforeach; ?>
+	  <div class="col-md-5 col-md-offset-5 hidden-sm hidden-xs">
+		<div class="medium-top-margin">
+			<?= wp_nav_menu(array("theme_location"=>"primary-menu", "menu_class" => "horizontal-top-menu font-style2")) ?>
+		</div>
 	  </div>
 		<div class="col-md-2">
 			<h1 align="left"><span class="theme-primary-fc glyphicon glyphicon-search hidden"></span></h1>

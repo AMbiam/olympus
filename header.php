@@ -42,14 +42,16 @@
 
 		.nav-link,
 		.nav-link:visited,
-		.vertical-top-menu li a{
+		.vertical-top-menu li a,
+		.horizontal-top-menu li a{
 			text-decoration: none;
 			color: <?= $primary_color ?>;
 		}
 
 		.nav-link:hover,
 		.nav-link:active,
-		.vertical-top-menu li a:hover{
+		.vertical-top-menu li a:hover,
+		.horizontal-top-menu li a:hover{
 			text-decoration: none;
 			color: <?= $secondary_color ?>;
 		}

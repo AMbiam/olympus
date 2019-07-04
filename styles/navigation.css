@@ -1,3 +1,15 @@
+.horizontal-top-menu{
+  list-style-type: none;
+  align:left;
+}
+
+.horizontal-top-menu li{
+  display: inline;
+  padding-right: 5vmax;
+  padding-left:0;
+  text-align: left
+}
+
 .footer-menu,
 .vertical-top-menu{
   list-style-type: none;
