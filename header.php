@@ -29,26 +29,36 @@
 
 	<!-- Styles -->
 	<link href="<?= CSS_STYLES; ?>olympus.css" rel="stylesheet">
-	<link href="<?= CSS_STYLES; ?>social-icons.css?id=12" rel="stylesheet">
+	<link href="<?= CSS_STYLES; ?>social-icons.css" rel="stylesheet">
+	<link href="<?= CSS_STYLES; ?>navigation.css" rel="stylesheet">
 	<style>
-		/*blue*/
-		.theme-color-bg{ background-color: <?= $theme_color ?>; }
-		.theme-color-font{ color: <?= $theme_color ?>; }
+		/*Theme primary and Secondary colors
+		bg = background
+		fc = font color*/
 		.theme-primary-bg{ background-color: <?= $primary_color ?>; }
 		.theme-secondary-bg{ background-color: <?= $secondary_color ?>; }
+		.theme-primary-fc{ color: <?= $primary_color ?>; }
+		.theme-secondary-fc{ color: <?= $secondary_color ?>; }
 
 		.nav-link,
-		.nav-link:visited{
+		.nav-link:visited,
+		.vertical-top-menu li a{
 			text-decoration: none;
-			color: <?= $theme_color ?>;
+			color: <?= $primary_color ?>;
 		}
 
 		.nav-link:hover,
-		.nav-link:active{
+		.nav-link:active,
+		.vertical-top-menu li a:hover{
 			text-decoration: none;
-			color: #000;
+			color: <?= $secondary_color ?>;
 		}
 	</style>
+
+	<!-- Angular JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="<?= SCRIPTS; ?>angular-animate.min.js"></script>
+	<script src="<?= SCRIPTS; ?>navigation.js"></script>
 	<?php wp_head();?>
 </head>
 <body>

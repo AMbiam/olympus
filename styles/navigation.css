@@ -1,46 +1,54 @@
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+.footer-menu,
+.vertical-top-menu{
+  list-style-type: none;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+.vertical-top-menu{
+  padding-top:10px;
 }
 
-.topnav #myLinks {
-  display: none;
+.vertical-top-menu li{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.topnav a {
-  color: white;
-  padding: 14px 16px;
+.footer-menu li a{
   text-decoration: none;
-  font-size: 17px;
-  display: block;
+  color: #fff;
 }
 
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+.footer-menu li a:hover{
+  text-decoration: none;
+  color: #aaa;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#hamburgernav{
+  color:#000;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
+#hamburgernav:hover{
+  color:#888;
 }
 
+/*Angular animate code.*/
+.nav-vert.ng-enter{
+  transition: .5s linear all;
+  opacity:0;
+  transform: translateX(-50%);
+}
+
+.nav-vert.ng-enter.ng-enter-active{
+  opacity:1;
+  transform: translateX(0);
+}
+
+.nav-vert.ng-leave{
+  transition: .5s linear all;
+  opacity:1;
+  transform: translateX(0);
+}
+
+.nav-vert.ng-leave.ng-leave-active{
+  opacity:0;
+  transform: translateX(-100%);
+}

@@ -1,12 +1,7 @@
 <!-- Footer -->
 <div class="row theme-primary-bg">
 	<div class="col-xs-6 tp-btm-padding-lg">
-		<ul class="font-2">
-			<ol>Link 1</ol>
-			<ol>Link 2</ol>
-			<ol>Link 3</ol>
-			<ol>Link 4</ol>
-		</ul>
+		<?= wp_nav_menu(array("theme_location"=>"secondary-menu", "menu_class" => "footer-menu")) ?>
 	</div>
 	<div class="col-xs-6 tp-btm-padding-lg">
 		<?php dynamic_sidebar('footer-1'); ?>

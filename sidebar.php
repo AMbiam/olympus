@@ -25,7 +25,7 @@ $half_pages = count($pages)/2;
 ?>
 	<div class="row">
 		<div class="col-lg-12 theme-primary-bg">
-			<h1 class="small-text font-2 font-style2 no-space text-center small-text-padding "><?= get_bloginfo( 'description' ) ?></h1>
+			<h1 class="small-text theme-secondary-fc font-style2 no-space text-center small-text-padding "><?= get_bloginfo( 'description' ) ?></h1>
 		</div>
 	</div>
 	<div class="row sticky">
@@ -51,9 +51,16 @@ $half_pages = count($pages)/2;
 		<?php endforeach; ?>
 	  </div>
 		<div class="col-md-2">
-			<h1 align="left"><span class="theme-color-font glyphicon glyphicon-search hidden"></span></h1>
+			<h1 align="left"><span class="theme-primary-fc glyphicon glyphicon-search hidden"></span></h1>
 		</div>
-		<div class="col-md-2 hidden-md hidden-lg theme-primary-bg">
-		  <h1 align="left"><span class="font-2 glyphicon glyphicon-align-justify"></span></h1>
+		<div ng-app="myNav" class="col-md-12 hidden-md hidden-lg">
+			<navigate>
+				<h1 align="left" ng-click="toggle()">
+					<span id="hamburgernav" ng-class="{'glyphicon-align-justify': hidden, 'glyphicon-remove': !hidden}" class="theme-primary-fc glyphicon "></span>
+				</h1>
+				<div ng-class="{'hidden': hidden}">
+					<?= wp_nav_menu(array("theme_location"=>"primary-menu", "menu_class" => "vertical-top-menu font-style2")) ?>
+				</div>
+			</navigate>
 		</div>	
 	</div>
