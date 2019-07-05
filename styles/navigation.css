@@ -1,6 +1,6 @@
 .horizontal-top-menu{
   list-style-type: none;
-  align:left;
+  text-align: right;
 }
 
 .horizontal-top-menu li{
@@ -22,16 +22,6 @@
 .vertical-top-menu li{
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.footer-menu li a{
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer-menu li a:hover{
-  text-decoration: none;
-  color: #aaa;
 }
 
 #hamburgernav{

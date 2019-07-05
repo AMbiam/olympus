@@ -150,6 +150,28 @@ function bwpy_customizer( $wp_customize ) {
 		'section' => 'bwpy_theme_colors',
 		'settings' => 'secondary_color',
 	) ) );
+
+	$wp_customize->add_setting( 'primary_text_color', array(
+		'default' => '#0000ff'
+	) );
+
+	// add color picker control
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_text_color', array(
+		'label' => 'Primary Text Color',
+		'section' => 'bwpy_theme_colors',
+		'settings' => 'primary_text_color',
+	) ) );
+
+	$wp_customize->add_setting( 'secondary_text_color', array(
+		'default' => '#0000ff'
+	) );
+
+	// add color picker control
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_text_color', array(
+		'label' => 'Secondary Text Color',
+		'section' => 'bwpy_theme_colors',
+		'settings' => 'secondary_text_color',
+	) ) );
 }
 add_action( 'customize_register', 'bwpy_customizer' );
 

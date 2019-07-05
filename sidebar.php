@@ -28,18 +28,20 @@ $half_pages = count($pages)/2;
 			<h1 class="small-text theme-secondary-fc font-style2 no-space text-center small-text-padding "><?= get_bloginfo( 'description' ) ?></h1>
 		</div>
 	</div>
-	<div class="row sticky">
+	<div id="mobile-menu" class="row sticky">
 		<div class="col-md-2">
 			<h1 align="left">
 				<div>
-					<img class="logo-img" src="<?= get_header_image() ?>" />
+					<a href="/">
+						<img class="logo-img" src="<?= get_header_image() ?>" />
+					</a>
 				</div>
 				<div>
 					<p class="small-text"><?= get_bloginfo( 'name' ) ?></p>
 				</div>
 			</h1>
 		</div>
-	  <div class="col-md-5 col-md-offset-5 hidden-sm hidden-xs">
+	  <div class="col-md-7 col-md-offset-3 hidden-sm hidden-xs">
 		<div class="medium-top-margin">
 			<?= wp_nav_menu(array("theme_location"=>"primary-menu", "menu_class" => "horizontal-top-menu font-style2")) ?>
 		</div>
