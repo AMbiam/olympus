@@ -6,6 +6,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'customize-selective-refresh-widgets' );
 add_theme_support( 'wp-block-styles' );
 add_theme_support( 'widget-customizer' );
+add_theme_support( 'custom-header' );
 
 
 function jelly_setup() {
@@ -41,7 +42,7 @@ function jelly_setup() {
 		'flex-width'             => 800,
 		'uploads'                => true,
 		'random-default'         => false,
-		'header-text'            => false,
+		'header-text'            => true,
 		'default-text-color'     => '',
 		'wp-head-callback'       => '',
 		'admin-head-callback'    => '',
@@ -118,13 +119,11 @@ function jelly_widgets_init() {
 }
 add_action( 'widgets_init', 'jelly_widgets_init' );
 
-
-
 /*Customize sections*/
 function bwpy_customizer( $wp_customize ) {
 	// add new section
 	$wp_customize->add_section( 'bwpy_theme_colors', array(
-		'title' => __( 'Theme Colors', 'bwpy' ),
+		'title' => __( 'Theme Colors', 'olympus' ),
 		'priority' => 100,
 	) );
 

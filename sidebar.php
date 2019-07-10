@@ -36,9 +36,11 @@ $half_pages = count($pages)/2;
 						<img class="logo-img" src="<?= get_header_image() ?>" />
 					</a>
 				</div>
-				<div>
-					<p class="small-text"><?= get_bloginfo( 'name' ) ?></p>
-				</div>
+				<?php if(display_header_text()): ?>
+					<div>
+						<p class="small-text"><?= get_bloginfo( 'name' ) ?></p>
+					</div>
+				<?php endif?>
 			</h1>
 		</div>
 	  <div class="col-md-7 col-md-offset-3 hidden-sm hidden-xs">
