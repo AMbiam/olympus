@@ -55,6 +55,11 @@ div.sticky {
 }
 
 .logo-img{
-  /*height:5vmax;*/
-  width:100%;
+  max-height:10vmax;
+  max-width:100%;
+}
+
+.va-bottom{
+	position: absolute;
+	bottom: 0;
 }

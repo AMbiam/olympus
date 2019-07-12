@@ -24,14 +24,6 @@
   padding-bottom: 5px;
 }
 
-#hamburgernav{
-  color:#000;
-}
-
-#hamburgernav:hover{
-  color:#888;
-}
-
 /*Angular animate code.*/
 .nav-vert.ng-enter{
   transition: .5s linear all;
