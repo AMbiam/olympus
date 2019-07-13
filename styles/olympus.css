@@ -60,6 +60,10 @@ div.sticky {
 }
 
 .va-bottom{
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;
+	bottom: 0;*/
+
+	float: none;
+    display: table-cell;
+    vertical-align: bottom;
 }
